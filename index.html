@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>First Date Funk Night – Dress Up Date Game</title>
+
+  <meta name="description" content="First Date Funk Night is a casual dress-up game where you choose outfits, hairstyles and accessories to create the perfect look for a first date." />
+  <meta name="theme-color" content="#264790" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="First Date Funk Night" />
+  <meta property="og:description" content="A casual dress-up game focused on first date fashion and style." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #121a33;
+      --text: #eef2ff;
+      --muted: #b7c2e2;
+      --brand: #44a6d9;
+      --brand-dark: #264790;
+      --border: rgba(255,255,255,.12);
+      --radius: 18px;
+      --shadow: 0 20px 60px rgba(0,0,0,.4);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1000px 500px at 10% 0%, rgba(68,166,217,.25), transparent 60%),
+        radial-gradient(800px 400px at 90% 10%, rgba(38,71,144,.35), transparent 55%),
+        linear-gradient(180deg, #060914 0%, var(--bg) 100%);
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 32px 20px 64px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 48px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: .3px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 36px;
+      align-items: center;
+      margin-bottom: 64px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      font-size: clamp(32px, 5vw, 54px);
+      line-height: 1.05;
+      margin: 0 0 16px;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      transition: all .2s ease;
+    }
+
+    .btn.primary {
+      background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+      border: none;
+      color: #fff;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.4);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      margin-bottom: 64px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      opacity: .8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <div class="logo">🎮 First Date Funk Night</div>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Dress Up for the<br>Perfect First Date</h1>
+        <p>
+          First Date Funk Night is a casual dress-up game where you choose outfits,
+          hairstyles and accessories to create the best look for a romantic first date.
+          Simple controls, fun fashion choices, and relaxed gameplay.
+        </p>
+
+        <div class="buttons">
+          <a class="btn primary" href="https://global.app.mi.com/details?lo=ID&la=en_US&id=com.fnf.firstdatefunknight.mindscraftltd" target="_blank">
+            Download on Xiaomi GetApps
+          </a>
+          <a class="btn" href="#features">Game Features</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <p><strong>Game Info</strong></p>
+        <p>Category: Casual Dress-Up Game</p>
+        <p>Platform: Android</p>
+        <p>Mode: Offline (ads may appear when online)</p>
+        <p>Version: 1.0</p>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="card">
+        <h3>👗 Fashion Choices</h3>
+        <p>Choose clothes, shoes, hairstyles and accessories to create unique styles.</p>
+      </div>
+      <div class="card">
+        <h3>❤️ First Date Theme</h3>
+        <p>A relaxed romantic atmosphere focused on first date preparation.</p>
+      </div>
+      <div class="card">
+        <h3>🎮 Simple Gameplay</h3>
+        <p>Open the game, press play, and start dressing up instantly.</p>
+      </div>
+      <div class="card">
+        <h3>📱 Mobile Friendly</h3>
+        <p>Designed for smooth play on Android devices.</p>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 MYBYDOLTD — First Date Funk Night
+    </footer>
+
+  </div>
+</body>
+</html>
